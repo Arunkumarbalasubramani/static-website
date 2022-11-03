@@ -11,11 +11,13 @@ import {
   Quality,
   Specifications,
 } from "./components/export.js";
+import Contactpage from "./Contactpage";
 
 function App() {
   return (
     <div className="App">
       <h1>Shivam Steels and Tubes</h1>
+      <Contactpage />
       <Home />
       <About />
       <Careers />
