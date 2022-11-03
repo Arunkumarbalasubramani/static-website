@@ -1,0 +1,9 @@
+export { default as About } from "./About/About.jsx";
+export { default as Careers } from "./Careers/Careers";
+export { default as Certifications } from "./Certifications/Certifications";
+export { default as Contact } from "./Contact/Contact";
+export { default as Home } from "./Home/Home";
+export { default as Process } from "./Process/Process";
+export { default as Product } from "./Products/Product";
+export { default as Quality } from "./Quality/Quality";
+export { default as Specifications } from "./Specifications/Specifications";
