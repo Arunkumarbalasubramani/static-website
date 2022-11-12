@@ -1,28 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap");
+.navbar-component {
+  background: #f8f9fa;
+}
 .navbar-container {
   display: flex;
-  justify-content: space-evenly;
+  margin: 20px;
+  background: #f8f9fa;
+  justify-content: space-around;
   align-items: center;
 }
-
-.social-links {
+.nav-link-list {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.add-ons {
+  padding-top: 8px;
 }
 
-.nav-links-container {
-  margin: 20px;
-  padding: 20px;
-
+.nav-link {
+  font-size: large;
+  font-weight: 600;
+  position: relative;
   :hover {
     color: #61afff;
-    font-weight: 500;
-    scale: 1.25;
-    transition: 300ms ease-in-out;
+    animation: myAnim 500ms ease-in-out 0s 1 normal none;
+  }
+  @keyframes myAnim {
+    100% {
+      transform: scale(1.25);
+    }
+  }
+  :focus {
+    border-bottom: 2px solid #61afff;
   }
 }
-.nav-link {
-  padding-left: 40px;
-  margin-left: 20px;
-  color: black;
+
+.home-intro {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+.who-we-are {
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+}
+.expertise {
+  // font-size: larger;
+  color: #273272;
+  margin-bottom: 35px;
+}
+
+.expertise-addon {
+  color: #ff5e14;
+  font-weight: 900;
+}
+
+.about {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  @media screen and (min-width: 360px) and (max-width: 768px) {
+    width: 200px;
+  }
+}
+
+.bg-image {
+  opacity: 0.2;
+  border: none;
+  height: 100px;
+  width: 100px;
+}
+.home-text {
+  text-align: left;
+}
+.card-text {
+  color: #ff5e14;
+  font-weight: 900;
+}
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:nth-child(1) {
+  justify-self: flex-end;
+}
+// .card-text-div {
+//   position: absolute;
+//   top: 30px;
+//   right: 18px;
+//   width: auto;
+// }
+.helper {
+  color: #273272;
+  font-weight: bold;
+  font-size: large;
 }

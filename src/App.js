@@ -12,22 +12,26 @@ import {
   Specifications,
 } from "./components/export.js";
 import Contactpage from "./Contactpage";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import NavbarComp from "./components/Home/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Shivam Steels and Tubes</h1>
+    <BrowserRouter>
       <Contactpage />
-      <Home />
-      <About />
-      <Careers />
-      <Certifications />
-      <Contact />
-      <Process />
-      <Product />
-      <Quality />
-      <Specifications />
-    </div>
+      <NavbarComp />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/careers" element={<Careers />} />
+        <Route path="/certifications" element={<Certifications />} />
+        <Route path="/process" element={<Process />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/quality" element={<Quality />} />
+        <Route path="/specifications" element={<Specifications />} />
+        <Route path="/contact-us" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

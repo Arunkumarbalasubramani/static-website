@@ -9,24 +9,23 @@ import {
   BsLinkedin,
 } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+
 const Contactpage = () => {
   return (
     <div className="contact-container">
-      <div className="mobile-no">
-        <h6>
-          <BsFillTelephoneFill />
-          +91-12345 67890
-        </h6>
+      <div className="mobile-no hover:scale-105 duration-300 ">
+        <BsFillTelephoneFill />
+        <h5>+91-1234567890</h5>
       </div>
       <div className="email-id">
-        {" "}
-        <FiMail /> sales@shivamsteelsandtubes.com
+        <FiMail />
+        <h5>sales@shivamsteelsandtubes.com</h5>
       </div>
       <div className="social-links">
-        <BsTwitter />
-        <BsInstagram />
-        <BsFacebook />
-        <BsLinkedin />
+        <BsTwitter className="hover:scale-150 duration-300 " />
+        <BsInstagram className="hover:scale-150 duration-300" />
+        <BsFacebook className="hover:scale-150 duration-300 " />
+        <BsLinkedin className="hover:scale-150 duration-300" />
       </div>
     </div>
   );

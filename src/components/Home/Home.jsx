@@ -1,82 +1,73 @@
 import React from "react";
 import "../Home/Home.scss";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
-import logo from "../../assets/logo.png";
-import facebookicon from "../../assets/facebook.png";
-import gmailicon from "../../assets/gmail.png";
-import linkedIcon from "../../assets/linkedin.png";
+import Card from "react-bootstrap/Card";
 
-import Nav from "react-bootstrap/Nav";
-
-import NavDropdown from "react-bootstrap/NavDropdown";
+import CarouselComp from "./Carousel";
+import Counter1 from "../../assets/counter1.png";
+import Counter2 from "../../assets/counter2.png";
+import Counter4 from "../../assets/counter4.png";
 
 const Home = () => {
   return (
     <div className="home-container">
-      <Navbar bg="light" expand="lg">
-        <Container className="navbar-container">
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src={logo}
-              width="150"
-              height="80"
-              className=" nav-link"
-            />{" "}
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbarq-nav">
-            <Nav className="me-auto nav-links-container">
-              <Nav.Link href="#home" className="nav-link">
-                About us
-              </Nav.Link>
-              <Nav.Link href="#link">Products</Nav.Link>
-              <NavDropdown title="Quality">
-                <NavDropdown.Item href="#action/3.1">Process</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.2">
-                  Specifications
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.3">
-                  Certifications
-                </NavDropdown.Item>
-              </NavDropdown>
-
-              <Nav.Link href="#link">Careers</Nav.Link>
-              <Nav.Link href="#link">Contact us</Nav.Link>
-            </Nav>
-            <div className="social-links">
-              <Nav.Link href="#link">
-                {" "}
-                <img
-                  src={gmailicon}
-                  alt="gmail-link"
-                  className="social-icons"
-                />
-              </Nav.Link>
-
-              <Nav.Link href="#link">
-                {" "}
-                <img
-                  src={linkedIcon}
-                  alt="linkedin-link"
-                  className="social-icons"
-                />
-              </Nav.Link>
-              <Nav.Link href="#link">
-                {" "}
-                <img
-                  src={facebookicon}
-                  alt="facebook-link"
-                  className="social-icons"
-                />
-              </Nav.Link>
+      <CarouselComp />
+      <div className="home-intro">
+        <div className="who-we-are">
+          <h3 className="expertise">
+            We Are Expert In
+            <span className="expertise-addon">
+              Manufacturing ERW Steel Tubes, Cold Rolled, Close Annealed Steel
+              Strips.
+            </span>
+          </h3>
+          <p className="home-text">
+            Shivam Steels and Tubes is a company manufacturing and exporting
+            high quality precision ERW steel tubes of round, square,
+            rectangular, elliptical and oval shapes. Shivam Steels and Tubes is
+            a part of the Vijay Group of Industries, one of the leading export
+            houses in India since 1976.
+          </p>
+          <p className="home-text">
+            Shivam Steels recently added cold rolling facility to cater to
+            automotive, furniture and general engineering industries, apart from
+            in-house requirements.
+          </p>
+          <p className="home-text">
+            Located in Chakan near Pune, Shivam Steels has a brilliantly planned
+            manufacturing unit fully integrated with state-of-the-art equipment
+            and ultra modern testing facilities.
+          </p>
+        </div>
+        <div className="about">
+          <Card.Body className="card transform transition duration-300 hover:scale-110">
+            <img src={Counter1} className="bg-image" />
+            <div className="card-text-div">
+              {" "}
+              <h1 className="card-text"> 45+ </h1>
             </div>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+            <p className="helper">Years of Experience</p>
+          </Card.Body>
+
+          <Card.Body className="card transform transition duration-300 hover:scale-110">
+            <img src={Counter2} className="bg-image" />
+            <div className="card-text-div">
+              {" "}
+              <h1 className="card-text">5+</h1>
+            </div>
+            <p className="helper">Product Range </p>
+          </Card.Body>
+
+          <Card.Body className="card transform transition duration-300 hover:scale-110">
+            <img src={Counter4} className="bg-image" />
+            <div className="card-text-div">
+              {" "}
+              <h1 className="card-text">100+</h1>
+            </div>
+
+            <p className="helper">Happy Clients</p>
+          </Card.Body>
+        </div>
+      </div>
     </div>
   );
 };
