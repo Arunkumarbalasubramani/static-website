@@ -1,0 +1,120 @@
+.page-info {
+  width: 100%;
+  height: 8.5rem;
+  background: #273272;
+  color: azure;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.page-info-text {
+  font-size: 3.1rem;
+  font-weight: 500;
+}
+.pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  color: #aeafb5;
+  :hover {
+    color: whitesmoke;
+  }
+}
+.next-page {
+  text-transform: capitalize;
+}
+.founder-image {
+  :hover {
+    border: 8px solid #273272;
+    transition-duration: 250ms;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 3%;
+  }
+}
+.about-content {
+  width: 100%;
+  // background: red;
+  height: 50%;
+  margin: 5%;
+  padding: 3%;
+  display: flex;
+  gap: 8%;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (max-width: 990px) {
+    flex-direction: column;
+  }
+}
+.about-text {
+  align-self: start;
+  flex-basis: 1;
+}
+.teamimage {
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
+  @media screen and (min-width: 990px) {
+    max-width: 500px;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1500px) {
+    height: 600px;
+    width: 400px;
+    object-fit: cover;
+  }
+}
+
+.text-head {
+  color: #273272;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.text-highlight {
+  color: #ff5e14;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 80px;
+  max-width: 60%;
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+    line-height: 40px;
+    max-width: 90%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1500px) {
+    max-width: 80%;
+  }
+}
+
+.text-normal {
+  max-width: 90%;
+  text-align: justify;
+  color: #707174;
+}
+
+.text-subHead {
+  color: #ff5e14;
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+
+.about-image {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+
+  opacity: 0.6;
+  background-color: #273272;
+  background-image: url("../../assets/about-image.jpg");
+  position: relative;
+  @media screen and (max-width: 768px) {
+    height: auto;
+  }
+}

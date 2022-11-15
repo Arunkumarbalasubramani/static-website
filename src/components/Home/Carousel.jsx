@@ -9,9 +9,13 @@ import Banner5 from "../../assets/banner5.jpg";
 const CarouselComp = () => {
   return (
     <div>
-      <Carousel>
+      <Carousel fade className="carousel-container">
         <Carousel.Item interval={1200}>
-          <img className="d-block w-100" src={Banner1} alt="First slide" />
+          <img
+            className="d-block w-100 carousel-image"
+            src={Banner1}
+            alt="First slide"
+          />
           <Carousel.Caption>
             <h3 className="carousel-title">
               State Of The Art Equipment & Ultra Modern Testing Facilities
@@ -19,7 +23,11 @@ const CarouselComp = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1200}>
-          <img className="d-block w-100 " src={Banner2} alt="Second slide" />
+          <img
+            className="d-block w-100 carousel-image"
+            src={Banner2}
+            alt="Second slide"
+          />
 
           <Carousel.Caption>
             <h3 className="carousel-title">
@@ -28,7 +36,11 @@ const CarouselComp = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1200}>
-          <img className="d-block w-100" src={Banner3} alt="Third slide" />
+          <img
+            className="d-block w-100 carousel-image"
+            src={Banner3}
+            alt="Third slide"
+          />
 
           <Carousel.Caption>
             <h3 className="carousel-title">
@@ -37,7 +49,11 @@ const CarouselComp = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1200}>
-          <img className="d-block w-100" src={Banner4} alt="Fourth slide" />
+          <img
+            className="d-block w-100 carousel-image"
+            src={Banner4}
+            alt="Fourth slide"
+          />
 
           <Carousel.Caption>
             <h3 className="carousel-title">
@@ -46,7 +62,11 @@ const CarouselComp = () => {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1200}>
-          <img className="d-block w-100" src={Banner5} alt="Fifth slide" />
+          <img
+            className="d-block w-100 carousel-image"
+            src={Banner5}
+            alt="Fifth slide"
+          />
 
           <Carousel.Caption>
             <h3 className="carousel-title">In-house Testing Facility</h3>
