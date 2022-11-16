@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Home/Home.scss";
 import logo from "../../assets/logo.png";
 
@@ -18,11 +18,7 @@ const NavbarComp = () => {
       <Navbar bg="light" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand>
-            <img
-              src={logo}
-              alt="brand-logo-image"
-              onClick={() => navigate("/")}
-            />
+            <img src={logo} alt="brand-logo" onClick={() => navigate("/")} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
