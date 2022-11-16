@@ -10,7 +10,7 @@ export const AboutCard = () => {
     <div className="about">
       <div className="about-card">
         <Card.Body className="card transform transition duration-300 hover:scale-110">
-          <img src={Counter1} className="bg-image" />
+          <img src={Counter1} className="bg-picture" alt="bg-pic" />
           <div className="card-text-div">
             <h1 className="card-text"> 15+ </h1>
           </div>
@@ -20,7 +20,7 @@ export const AboutCard = () => {
 
       <div className="about-card">
         <Card.Body className="card transform transition duration-300 hover:scale-110">
-          <img src={Counter2} className="bg-image" />
+          <img src={Counter2} className="bg-picture" alt="bg-pic" />
           <div className="card-text-div">
             {" "}
             <h1 className="card-text">5+</h1>
@@ -30,7 +30,7 @@ export const AboutCard = () => {
       </div>
       <div className="about-card">
         <Card.Body className="card transform transition duration-300 hover:scale-110">
-          <img src={Counter4} className="bg-image" />
+          <img src={Counter4} className="bg-picture" alt="bg-pic" />
           <div className="card-text-div">
             {" "}
             <h1 className="card-text">1K+</h1>
