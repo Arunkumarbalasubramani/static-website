@@ -4,7 +4,6 @@ import sampleTeam from "../../assets/sample-team.png";
 
 import PageInfo from "../PageInfo";
 import { AboutCard } from "./AboutCard";
-import aboutImage from "../../assets/about-image.jpg";
 const About = () => {
   return (
     <div className="aboutpage">
@@ -12,7 +11,7 @@ const About = () => {
 
       <div className="about-content">
         <div className="founder-image ">
-          <img className="teamimage" src={sampleTeam} alt="team-image" />
+          <img className="teamimage" src={sampleTeam} alt="teampicture" />
         </div>
         <div className="about-text">
           <p className="text-head">We are Here to </p>
@@ -44,7 +43,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
             velit. Tempora voluptates, nemo odit modi cum nulla doloremque et
             maiores recusandae voluptas voluptatibus expedita magni omnis facere
-            temporibus consectetur, ab adipisci! Quia magni tempore, perferendis
+            temporibus csectetur, ab adipisci! Quia magni tempore, perferendis
             aliquam quis adipisci.{" "}
           </p>
         </div>

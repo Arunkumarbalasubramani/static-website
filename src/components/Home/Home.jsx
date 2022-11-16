@@ -26,7 +26,8 @@ const Home = () => {
         <p className="home-text">
           {" "}
           Shivam Steels and Tubes is a part of the Vijay Group of Industries,
-          one of the leading export houses in India since 1976.
+          one of the leading export houses in India since 1976. We have aroun
+          1K+ Happy customers
         </p>
 
         <p className="home-text">
