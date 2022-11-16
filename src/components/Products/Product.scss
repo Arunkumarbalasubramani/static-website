@@ -1,0 +1,45 @@
+.page-helper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+}
+.helper-text {
+  color: #273272;
+}
+
+.product-image {
+  height: 240px;
+}
+.product-cards {
+  display: flex;
+  gap: 40px;
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.more-btn {
+  background: #ff5e14;
+  color: aliceblue;
+  border: none;
+}
+
+.card-container {
+  height: 400px;
+  animation: slide-left 700ms ease-in-out both;
+  @media screen and (min-width: 900px) {
+    @keyframes slide-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(80px);
+      }
+    }
+  }
+}
+
+.product-image {
+  object-fit: cover;
+}

@@ -104,17 +104,3 @@
   font-weight: 600;
   font-size: 1.75rem;
 }
-
-.about-image {
-  width: 100%;
-  height: 650px;
-  object-fit: cover;
-
-  opacity: 0.6;
-  background-color: #273272;
-  background-image: url("../../assets/about-image.jpg");
-  position: relative;
-  @media screen and (max-width: 768px) {
-    height: auto;
-  }
-}

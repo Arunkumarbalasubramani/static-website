@@ -11,6 +11,7 @@ import {
   Quality,
   Specifications,
   Footer,
+  ProductDetails,
 } from "./components/export.js";
 import Contactpage from "./Contactpage";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/quality" element={<Quality />} />
         <Route path="/specifications" element={<Specifications />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/product-details" element={<ProductDetails />} />
       </Routes>
       <Footer />
     </BrowserRouter>

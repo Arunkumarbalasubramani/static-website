@@ -8,3 +8,4 @@ export { default as Product } from "./Products/Product";
 export { default as Quality } from "./Quality/Quality";
 export { default as Specifications } from "./Specifications/Specifications";
 export { default as Footer } from "./Footer/Footer";
+export { default as ProductDetails } from "./Products/Product-Details";
