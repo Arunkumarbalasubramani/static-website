@@ -19,6 +19,9 @@
   text-align: justify;
   font-weight: 600;
   font-size: 1.15rem;
+  @media screen and(max-width:768px) {
+    width: 100%;
+  }
 }
 
 .process-img-div {
@@ -40,6 +43,9 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 .solutions-div {
   width: 80%;
