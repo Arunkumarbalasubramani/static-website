@@ -1,0 +1,88 @@
+.careers-container {
+  margin: 3%;
+}
+.helper {
+  color: #273272;
+  font-weight: 600;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1%;
+}
+
+.helper-text1 {
+  color: #ff5e14;
+  font-weight: 600;
+  text-align: center;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px;
+  margin: 2%;
+  padding: 2%;
+}
+
+.job1 {
+  grid-row: 1/4;
+}
+
+.current-job {
+  color: #273272;
+  font-size: 2.5rem;
+  text-decoration: none;
+  :hover {
+    color: #ff5e14 !important;
+  }
+}
+.jobdetails {
+  display: flex;
+  gap: 30px;
+}
+.eligibility {
+  color: #ff5e14;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.value {
+  color: #273272;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.apply-btn {
+  animation: scale-in-center 700ms ease-in-out both;
+  :hover {
+    @keyframes scale-in-center {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+}
+.closed-btn {
+  color: #ff5e14;
+}
+.closed-job {
+  display: flex;
+  gap: 40px;
+}
+.jobPic {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+.jobTitle {
+  color: #242f6e;
+  font-size: 1.5rem;
+}
+
+.newsletter-div {
+  margin: 2%;
+}
