@@ -37,51 +37,55 @@ const NavbarComp = () => {
                 id="basic-nav-dropdown"
                 className="add-ons"
               >
-                <NavDropdown.Item>
-                  <li className="nav-link">
-                    <Nav.Link onClick={() => navigate("/products")}>
-                      Products
-                    </Nav.Link>
-                  </li>
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  <li className="nav-link">
-                    <Nav.Link onClick={() => navigate("/process")}>
-                      Process
-                    </Nav.Link>
-                  </li>
-                </NavDropdown.Item>
+                <div className="dropdown-item1">
+                  <NavDropdown.Item>
+                    <li>
+                      <Nav.Link onClick={() => navigate("/products")}>
+                        Products
+                      </Nav.Link>
+                    </li>
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item>
+                    <li>
+                      <Nav.Link onClick={() => navigate("/process")}>
+                        Process
+                      </Nav.Link>
+                    </li>
+                  </NavDropdown.Item>
+                </div>
               </NavDropdown>
               <NavDropdown
                 title="Attributes"
                 id="basic-nav-dropdown"
                 className="add-ons"
               >
-                <NavDropdown.Item>
-                  <li className="nav-link">
-                    <Nav.Link onClick={() => navigate("/quality")}>
-                      {" "}
-                      Quality
-                    </Nav.Link>
-                  </li>
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  <li className="nav-link">
-                    <Nav.Link onClick={() => navigate("/specifications")}>
-                      Specifications
-                    </Nav.Link>
-                  </li>
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item>
-                  <li className="nav-link">
-                    <Nav.Link onClick={() => navigate("/certifications")}>
-                      Certifications
-                    </Nav.Link>
-                  </li>
-                </NavDropdown.Item>
+                <div className="dropdown-item2">
+                  <NavDropdown.Item>
+                    <li>
+                      <Nav.Link onClick={() => navigate("/quality")}>
+                        {" "}
+                        Quality
+                      </Nav.Link>
+                    </li>
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item>
+                    <li>
+                      <Nav.Link onClick={() => navigate("/specifications")}>
+                        Specifications
+                      </Nav.Link>
+                    </li>
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item>
+                    <li>
+                      <Nav.Link onClick={() => navigate("/certifications")}>
+                        Certifications
+                      </Nav.Link>
+                    </li>
+                  </NavDropdown.Item>
+                </div>
               </NavDropdown>
               <li className="nav-link">
                 <Nav.Link onClick={() => navigate("/careers")} className="">
