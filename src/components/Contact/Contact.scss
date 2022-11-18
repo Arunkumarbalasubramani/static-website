@@ -1,0 +1,111 @@
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3%;
+  :hover {
+    scale: 1.1;
+    transition-duration: 300ms;
+  }
+}
+.contact-us {
+  background: rgba(205, 203, 203, 0.1);
+  width: 30%;
+  height: 500px;
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  animation: bounce-top 1000ms both;
+  @media screen and (max-width: 1230px) {
+    width: 90%;
+  }
+
+  @keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+      transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+      transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+      transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+      transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+}
+
+.social-contact {
+  background: #ff5e14;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 50px;
+  :hover {
+    color: aliceblue;
+  }
+}
+
+.comp-logo {
+  margin: 3%;
+}
+
+.address-text {
+  color: #273272;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-office {
+  display: flex;
+  gap: 20px;
+
+  align-items: center;
+}
