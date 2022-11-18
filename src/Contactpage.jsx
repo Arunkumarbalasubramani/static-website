@@ -12,8 +12,8 @@ import { FiMail } from "react-icons/fi";
 
 const Contactpage = () => {
   return (
-    <div className="contact-container">
-      <div className="mobile-no hover:scale-105 duration-300 ">
+    <div className="contact-container p-2">
+      <div className="mobile-no hover:scale-105 duration-300  ">
         <BsFillTelephoneFill />
         <h5>+91-1234567890</h5>
       </div>

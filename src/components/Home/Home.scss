@@ -21,7 +21,9 @@
 }
 .carousel-image {
   animation: kenburns-top 5s ease-out both;
-
+  width: 80%;
+  height: 600px;
+  object-fit: cover;
   @keyframes kenburns-top {
     0% {
       -webkit-transform: scale(1) translateY(0);
@@ -93,6 +95,13 @@
 }
 .who-we-are {
   padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .expertise {
@@ -139,26 +148,9 @@
   color: #ff5e14;
   font-weight: 900;
 }
-// .card {
-//   width: 300px;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   @media screen and (max-width: 680px) {
-//     width: 350px;
-//   }
-// }
-.card:nth-child(1) {
-  justify-self: flex-end;
-}
-// .card-text-div {
-//   position: absolute;
-//   top: 30px;
-//   right: 18px;
-//   width: auto;
-// }
+
 .helper {
   color: #273272;
   font-weight: bold;
-  font-size: large;
+  font-size: 1.75rem;
 }

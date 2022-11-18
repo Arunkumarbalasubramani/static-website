@@ -8,7 +8,7 @@ import Counter4 from "../../assets/counter4.png";
 export const AboutCard = () => {
   return (
     <div className="about">
-      <div className="about-card">
+      <div className="about-card  ">
         <Card.Body className="card transform transition duration-300 hover:scale-110">
           <img src={Counter1} className="bg-picture" alt="bg-pic" />
           <div className="card-text-div">
@@ -18,7 +18,7 @@ export const AboutCard = () => {
         </Card.Body>
       </div>
 
-      <div className="about-card">
+      <div className="about-card ">
         <Card.Body className="card transform transition duration-300 hover:scale-110">
           <img src={Counter2} className="bg-picture" alt="bg-pic" />
           <div className="card-text-div">

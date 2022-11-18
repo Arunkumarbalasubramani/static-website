@@ -8,12 +8,10 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="who-we-are">
-        <h3 className="expertise">
-          We Are Expert In
-          <span className="expertise-addon">
-            Manufacturing ERW Steel Tubes, Cold Rolled, Close Annealed Steel
-            Strips.
-          </span>
+        <h3 className="expertise">We Are Expert In </h3>
+        <h3 className="expertise-addon">
+          Manufacturing ERW Steel Tubes, Cold Rolled, Close Annealed Steel
+          Strips.
         </h3>
       </div>
       <CarouselComp />

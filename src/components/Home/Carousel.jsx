@@ -10,7 +10,7 @@ const CarouselComp = () => {
   return (
     <div>
       <Carousel fade className="carousel-container">
-        <Carousel.Item interval={1700}>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100 carousel-image"
             src={Banner1}
@@ -22,7 +22,7 @@ const CarouselComp = () => {
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1700}>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100 carousel-image"
             src={Banner2}
@@ -35,7 +35,7 @@ const CarouselComp = () => {
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1700}>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100 carousel-image"
             src={Banner3}
@@ -48,7 +48,7 @@ const CarouselComp = () => {
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1700}>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100 carousel-image"
             src={Banner4}
@@ -61,7 +61,7 @@ const CarouselComp = () => {
             </h3>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1700}>
+        <Carousel.Item interval={2000}>
           <img
             className="d-block w-100 carousel-image"
             src={Banner5}

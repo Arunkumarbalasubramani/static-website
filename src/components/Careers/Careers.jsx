@@ -29,7 +29,7 @@ const Careers = () => {
     <div>
       <PageInfo nextpage={"Contact-us"} currentPage={"Careers"} />
       <div className="careers-container">
-        <h1 className="helper"> Our Job Requirements</h1>
+        <h1 className="helper1"> Our Job Requirements</h1>
         <h1 className="helper-text1"> Open Positions</h1>
         <div className="jobs">
           <div className="job1">
