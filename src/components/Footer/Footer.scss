@@ -1,9 +1,14 @@
 .footer-container {
-  background-color: antiquewhite;
+  background-color: #273272;
+  color: #fff;
   width: 100%;
   height: 75px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
+  gap: 30px;
+}
+
+.footer-text {
+  font-weight: 600;
 }

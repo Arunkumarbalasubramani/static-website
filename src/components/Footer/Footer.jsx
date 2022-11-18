@@ -4,13 +4,12 @@ import { AiOutlineCopyright } from "react-icons/ai";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <h6 className="footer-text">
-        <span>
-          {" "}
-          <AiOutlineCopyright />
-        </span>{" "}
+      <div>
+        <AiOutlineCopyright />
+      </div>
+      <h5 className="footer-text">
         2022 Designed and Developed By Arun Kumar Balasubramani
-      </h6>
+      </h5>
     </div>
   );
 };
